@@ -308,6 +308,86 @@
             scroll-behavior: smooth;
         }
 
+
+        /* My Creative Side Section */
+        .creative-side {
+            background-color: #25274D; /* Background color */
+            color: #FFFFFF; /* Text color */
+            text-align: center;
+            padding: 3rem 1rem;
+            font-family: 'Share Tech Mono', monospace; /* Consistent font */
+        }
+
+        .creative-side h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 3rem;
+            color: #9114FF; /* Accent color */
+            margin-bottom: 2rem;
+        }
+
+        .creative-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .creative-item {
+            background-color: #1A1A2E; /* Darker background for cards */
+            border-radius: 15px; /* Rounded corners */
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .creative-item h3 {
+            font-size: 1.5rem;
+            color: #FFD700; /* Accent color */
+            margin-bottom: 1rem;
+        }
+
+        .creative-item p {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+        }
+
+        .creative-item:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 576px) {
+            .creative-side h2 {
+                font-size: 2rem;
+            }
+
+            .creative-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .creative-item p {
+                font-size: 1rem;
+            }
+        }
+
+                .creative-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #9114FF; /* Link color */
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .creative-link:hover {
+            color: #FFD700; /* Hover effect color */
+            text-decoration: underline;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -436,6 +516,34 @@
             </div>
         </div>
     </section>
+
+
+    <!-- My Creative Side Section -->
+    <section class="creative-side" id="creative-side">
+        <h2>My Creative Side</h2>
+        <div class="creative-items">
+            <!-- Short Film -->
+        <div class="creative-item">
+            <h3>🎥 Made Short Film</h3>
+            <p>I have directed and produced short films that tell unique stories with compelling visuals and emotions, showcasing my creative storytelling abilities.</p>
+            <a href="short-film.html" class="creative-link">Explore my short film &raquo;</a>
+        </div>
+
+            
+            <!-- Video Editing -->
+            <div class="creative-item">
+                <h3>✂️ Edits Videos</h3>
+                <p>I enjoy editing videos, transforming raw footage into engaging content using techniques like transitions, effects, and sound synchronization.</p>
+            </div>
+            
+            <!-- Photography -->
+            <div class="creative-item">
+                <h3>📸 Love Photography</h3>
+                <p>My passion for photography allows me to capture moments and emotions, experimenting with light, angles, and composition to create stunning visuals.</p>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- About Me Section -->
