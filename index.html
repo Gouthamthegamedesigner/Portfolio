@@ -387,6 +387,69 @@
         }
 
 
+            /* Experience Section */
+        .experience {
+            background-color: #25274D; /* Background color matching theme */
+            color: #FFFFFF; /* Text color */
+            text-align: center;
+            padding: 3rem 1rem;
+            font-family: 'Share Tech Mono', monospace; /* Consistent font */
+        }
+
+        .experience h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 3rem;
+            color: #9114FF; /* Accent color */
+            margin-bottom: 2rem;
+        }
+
+        .experience-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .experience-item {
+            background-color: #1A1A2E; /* Card background */
+            border-radius: 15px; /* Rounded corners */
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+        }
+
+        .experience-item:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+        }
+
+        .experience-item h3 {
+            font-size: 1.5rem;
+            color: #FFD700; /* Highlight color */
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            margin: 0.5rem 0;
+        }
+
+        .experience-item ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .experience-item ul li {
+            font-size: 1rem;
+            color: #FFFFFF;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+
+
+
 
     </style>
 </head>
@@ -397,6 +460,7 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#creative-side">Creatives</a>
+        <a href="#experience"></a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -542,6 +606,24 @@
             </div>
         </div>
     </section>
+
+
+        <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>Intern Game Developer </h3>
+                <p><strong>Banzan Studios</strong></p>
+                <p>February 2025 - May 2025</p>
+                <ul>
+                    <li>Developed 3 mobile (android) games </li>
+                    <li>One 2D demo game, One 3D platformer and one 2D shooter </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 
 
 
